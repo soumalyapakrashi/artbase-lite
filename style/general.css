@@ -1,0 +1,42 @@
+.span-form-required {
+    color: red;
+}
+
+.artwork img {
+    max-height: 500px;
+    max-width: 1000px;
+    display: block;
+    margin: 50px 0px;
+}
+
+.artwork .artwork-details {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.artwork-details div {
+    width: 100%;
+}
+
+.artwork p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.artwork button {
+    padding: 10px 40px;
+    margin-bottom: 50px;
+}
+
+.showcase .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 40px 0px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}

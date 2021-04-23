@@ -1,0 +1,19 @@
+.login {
+    max-width: 500px;
+    /* min-height: 500px; */
+    border: 2px solid lightgray;
+    padding: 50px 30px;
+    border-radius: 10px;
+}
+
+.login .dialog {
+    margin-top: 20px;
+}
+
+.login form div + div {
+    margin-top: 30px;
+}
+
+.login form div + button {
+    margin-top: 30px;
+}

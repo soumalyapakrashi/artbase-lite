@@ -1,0 +1,22 @@
+.signup .customer {
+    display: block;
+    margin-top: 30px;
+}
+
+.signup .artist {
+    display: none;
+    margin-top: 30px;
+}
+
+.signup button {
+    margin-top: 30px;
+    min-width: 150px;
+}
+
+.signup {
+    margin-bottom: 50px;
+}
+
+.signup h2 {
+    margin-bottom: 30px;
+}
