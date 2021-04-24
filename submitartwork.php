@@ -2,6 +2,7 @@
 
 require "./CREDENTIALS.php";
 
+// Values taken from CREDENTIALS.php
 $dsn = "mysql:host=" . $host . ";dbname=" . $dbname;
 $pdo = new PDO($dsn, $user, $password);
 
@@ -35,7 +36,8 @@ if(isset($_POST["submit"])) {
     // Upload the picture
     $target_file = "";
     if($picture != "") {
-        $target_dir = "uploads/artworks/";
+        // Value taken from CREDENTIALS.php
+        $target_dir = $artwork_picture_dir;
         $image_file_type = strtolower(pathinfo($_FILES["artworkpicture"]["name"], PATHINFO_EXTENSION));
         $target_file = $target_dir . $title . "." . $image_file_type;
         $upload_ok = 1;

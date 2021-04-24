@@ -2,6 +2,7 @@
 
 require "./CREDENTIALS.php";
 
+// Values taken from CREDENTIALS.php
 $dsn = "mysql:host=" . $host . ";dbname=" . $dbname;
 $pdo = new PDO($dsn, $user, $password);
 
@@ -92,7 +93,8 @@ if(isset($_POST["signup"])) {
                 // Upload the picture if set
                 $target_file = "";
                 if($picture != "") {
-                    $target_dir = "uploads/artists/";
+                    // Value taken from CREDENTIALS.php
+                    $target_dir = $artist_picture_dir;
                     $image_file_type = strtolower(pathinfo($_FILES["pictureArtist"]["name"], PATHINFO_EXTENSION));
                     $target_file = $target_dir . $uid . "." . $image_file_type;
                     $upload_ok = 1;
