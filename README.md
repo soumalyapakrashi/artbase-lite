@@ -85,7 +85,7 @@ $dbname = "artbase";
 When an artwork or the picture of an artist is uploaded, it is stored somewhere in the server. This location where the images are stored are specified by the variables $artist_picture_dir and $artwork_picture_dir. Some good examples are given as follows but if you decide to change them, be sure to add that folder to the .gitignore file as this folder does not need to be version controlled or uploaded to any public platform.
 
 ```php
-$artist_picture_dir = "uploads/artist/";
+$artist_picture_dir = "uploads/artists/";
 $artwork_picture_dir = "uploads/artworks/";
 ```
 
